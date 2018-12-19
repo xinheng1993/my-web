@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import Tr_title from "./components/tr_title";
+import App from './App'
 
-ReactDOM.render(<Tr_title />, document.getElementById("root"));
+
+ReactDOM.render(<App />, document.getElementById("root"));
