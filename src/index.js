@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import Tr_title from "./components/tr_title";
 
-const element = <h1>tr 4x4</h1>;
-
-console.log(element);
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(<Tr_title />, document.getElementById("root"));
