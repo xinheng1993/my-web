@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
-import Tr_title from "./components/tr_title";
+import React, { Component } from "react";
+import Navbar from "./components/Navbar";
+import MainContent from "./components/MainContent";
+import Footer from "./components/Footer";
 
 class App extends Component {
-    render(){
-        return(
-            <div>
-                <Tr_title />
-                <h2>From App.js</h2>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <Navbar />
+        <MainContent />
+        <Footer />
+      </div>
+    );
+  }
 }
 export default App;
