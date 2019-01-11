@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import logo from "../pic/pkaqiu.png"
+import logo from "../asset/favicon.ico"
 
 class Navbar extends Component {
   state = {};
