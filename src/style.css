@@ -1,3 +1,28 @@
 .my{
     background-color: blanchedalmond;
 }
+.mynav{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+.childnav{
+    padding:10px;
+    border: 1px solid red;
+    text-align: center;
+    align-self: center;
+}
+.rightnav{
+    display: flex;
+    flex-direction: row;
+    border:1px dashed black;
+    justify-content: flex-start;
+    width:60%;
+}
+.leftnav{
+    display: flex;
+    flex-direction: row;
+    border:1px dashed blue;
+    justify-content: center;
+    width:40%;
+}

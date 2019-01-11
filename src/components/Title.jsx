@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
-class Footer extends Component {
+class LoGo extends Component {
     render() {
         return (
-            <footer>this is footer</footer>
+            <div>this is footer</div>
         )
     }
 }
-export default Footer
+export default LoGo
