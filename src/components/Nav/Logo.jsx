@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import logo from '../../assets/img/logo-red.jpg'
+import '../../style.css';
 
 class Logo extends Component {
     render() {
         return (
-            <div>this is footer</div>
+            <div>
+                <img className='childnav' src={logo} alt="logo"></img>
+            </div>
         )
     }
 }
