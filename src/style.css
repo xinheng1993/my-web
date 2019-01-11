@@ -13,17 +13,17 @@
   align-self: center;
   margin: 5px;
 }
-.rightnav {
+.leftnav {
   display: flex;
   flex-direction: row;
   border: 1px dashed black;
   justify-content: flex-start;
-  width: 60%;
+  width: 80%;
 }
-.leftnav {
+.rightnav {
   display: flex;
   flex-direction: row;
   border: 1px dashed blue;
   justify-content: center;
-  width: 40%;
+  width: 20%;
 }
