@@ -1,28 +1,29 @@
-.my{
-    background-color: blanchedalmond;
+.my {
+  background-color: blanchedalmond;
 }
-.mynav{
-    display: flex;
-    flex-direction: row;
-    width:100%;
+.mynav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-.childnav{
-    padding:10px;
-    border: 1px solid red;
-    text-align: center;
-    align-self: center;
+.childnav {
+  padding: 10px;
+  border: 1px solid red;
+  text-align: center;
+  align-self: center;
+  margin: 5px;
 }
-.rightnav{
-    display: flex;
-    flex-direction: row;
-    border:1px dashed black;
-    justify-content: flex-start;
-    width:60%;
+.rightnav {
+  display: flex;
+  flex-direction: row;
+  border: 1px dashed black;
+  justify-content: flex-start;
+  width: 60%;
 }
-.leftnav{
-    display: flex;
-    flex-direction: row;
-    border:1px dashed blue;
-    justify-content: center;
-    width:40%;
+.leftnav {
+  display: flex;
+  flex-direction: row;
+  border: 1px dashed blue;
+  justify-content: center;
+  width: 40%;
 }
