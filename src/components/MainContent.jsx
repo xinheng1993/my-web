@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import Card from "./Card";
 
 class MainContent extends Component {
   render() {
-    return <div className='my'>this is body</div>;
+    return <Card />;
   }
 }
 export default MainContent;
