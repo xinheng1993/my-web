@@ -5,7 +5,9 @@ import "../style.css";
 class Card extends Component {
   render() {
     return (
-      <div className='my'>this is card</div>
+      <div className='col-md-4'>
+        <div className='card'>this is card</div>
+      </div>
       // <Card />
     );
   }

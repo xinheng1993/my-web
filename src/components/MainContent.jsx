@@ -4,7 +4,17 @@ import Card from "./Card";
 
 class MainContent extends Component {
   render() {
-    return <Card />;
+    return (
+      <div className='card-group'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    );
   }
 }
 export default MainContent;

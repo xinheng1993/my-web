@@ -27,3 +27,12 @@
   justify-content: center;
   width: 20%;
 }
+.card-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2px 5px 2px 5px;
+}
+.card {
+  border: 1px dashed blue;
+}
