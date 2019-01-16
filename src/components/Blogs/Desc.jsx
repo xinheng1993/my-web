@@ -4,9 +4,12 @@ class Desc extends Component{
 
 
     render(){
-        return({
-
-        });
+        let desc = this.props.desc;
+        return(
+            <h6>
+                {desc}
+            </h6>
+        );
     }
 }
 
