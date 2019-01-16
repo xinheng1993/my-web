@@ -1,16 +1,13 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Card from "./Card";
-import Blogs from './Blogs/Blogs';
+import Blogs from './Blogs/Blogs'
 
 class MainContent extends Component {
   render() {
     return (
       <div className='card-group'>
-
-        <Blogs />
-        <Blogs />
-        <Blogs />
+      <Blogs />
         {/* <Card />
         <Card />
         <Card />
