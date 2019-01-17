@@ -20,15 +20,14 @@ class Cover extends Component {
       imgUrl: jkAddr,
       desc: "Short Description"
     };
-    this.detail = this.detail.bind(this);
-  }
-  detail() {
-    this.props.history.push("/blogs");
   }
 
   render() {
     return (
-      <div className='col-md-4 mycard' onClick={this.detail}>
+      <div
+        className='col-md-4 mycard'
+        onClick={() => this.props.detail(this.props.id)}
+      >
         <Card>
           <CardBody>
             <CardTitle tag='h3'>Card title</CardTitle>

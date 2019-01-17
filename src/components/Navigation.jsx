@@ -1,14 +1,18 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import Img from 'react-image';
+import Img from "react-image";
 import {
-  Collapse, Navbar, NavbarToggler,
-  NavbarBrand, Nav, NavItem,
-  NavLink,
-} from 'reactstrap';
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink
+} from "reactstrap";
 
-import logoURLSm from '../assets/img/logo-sm.png'
-import logoURL from '../assets/img/logo-red.png'
+import logoURLSm from "../assets/img/logo-sm.png";
+import logoURL from "../assets/img/logo-red.png";
 class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -19,17 +23,16 @@ class Navigation extends Component {
       width: 0
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-
   }
   componentDidMount() {
     this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener("resize", this.updateWindowDimensions);
   }
-  
+
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
+    window.removeEventListener("resize", this.updateWindowDimensions);
   }
-  
+
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
@@ -42,25 +45,27 @@ class Navigation extends Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color='light' light expand='md'>
           <NavbarBrand>
-            <Img style={{width: '80%'}} src={this.state.width > 767.5?logoURL:logoURLSm} />
-            
+            <Img
+              style={{ width: "80%" }}
+              src={this.state.width > 767.5 ? logoURL : logoURLSm}
+            />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className='ml-auto' navbar>
               <NavItem>
-                <NavLink href="/components/Blogs/Blogs">Blogs</NavLink>
+                <NavLink href='/Blogs'>Blogs</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Shop</NavLink>
+                <NavLink href='#'>Shop</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">About</NavLink>
+                <NavLink href='#'>About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Contact</NavLink>
+                <NavLink href='#'>Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
