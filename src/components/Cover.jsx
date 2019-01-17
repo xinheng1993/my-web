@@ -24,7 +24,7 @@ class Cover extends Component {
   }
 
   render() {
-    
+
     return (
       <div className='col-md-4 mycard'>
         <Card>
@@ -42,6 +42,7 @@ class Cover extends Component {
 
           </CardBody>
         </Card>
+
       </div>
     );
   }

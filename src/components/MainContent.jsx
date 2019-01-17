@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Cover from "./Cover";
+import {CardDeck} from 'reactstrap'
 import Blogs from './Blogs/Blogs'
 
 class MainContent extends Component {
@@ -8,13 +9,16 @@ class MainContent extends Component {
     return (
       <div className='card-group'>
         {/* <Blogs /> */}
-        <Cover />
-        <Cover />
-        <Cover />
-        <Cover />
-        <Cover />
-        <Cover />
-        <Cover />
+        <CardDeck>
+          <Cover />
+          <Cover />
+          <Cover />
+          <Cover />
+          <Cover />
+          <Cover />
+          <Cover />
+        </CardDeck>
+
       </div>
     );
   }
