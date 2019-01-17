@@ -15,20 +15,36 @@ class Navigation extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      width: 0
     };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+
+  }
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+  //window size 767.5
   render() {
     return (
       <div>
         <Navbar color="light" light expand="md">
           <NavbarBrand>
-            <Img src={this.state.isOpen?logoURLSm:logoURL} />
+            <Img style={{width: '80%'}} src={this.state.width > 767.5?logoURL:logoURLSm} />
             
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
