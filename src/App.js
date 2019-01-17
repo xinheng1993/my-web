@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import Navigation from "./components/Navigation";
-import MainContent from "./components/MainContent";
+import Home from "./home";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Navigation />
-        <MainContent />
+        <Home />
       </div>
     );
   }

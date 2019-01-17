@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Cover from "./Cover";
-import {CardDeck} from 'reactstrap'
-import Blogs from './Blogs/Blogs'
+import { CardDeck } from "reactstrap";
 
 class MainContent extends Component {
   render() {
@@ -18,7 +17,6 @@ class MainContent extends Component {
           <Cover />
           <Cover />
         </CardDeck>
-
       </div>
     );
   }
