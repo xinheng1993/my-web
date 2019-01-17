@@ -8,7 +8,7 @@ class MainContent extends Component {
   render() {
     return (
       <div className='card-group'>
-        {/* <Blogs /> */}
+        <Blogs />
         <CardDeck>
           <Cover />
           <Cover />
@@ -18,7 +18,6 @@ class MainContent extends Component {
           <Cover />
           <Cover />
         </CardDeck>
-
       </div>
     );
   }

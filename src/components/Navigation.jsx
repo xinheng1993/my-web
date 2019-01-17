@@ -6,6 +6,7 @@ import {
   NavbarBrand, Nav, NavItem,
   NavLink,
 } from 'reactstrap';
+import {Link} from 'react-router-dom';
 
 import logoURLSm from '../assets/img/logo-sm.png'
 import logoURL from '../assets/img/logo-red.png'
@@ -51,7 +52,7 @@ class Navigation extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/Blogs/Blogs">Blogs</NavLink>
+                <Link to='/Blogs/Blogs'><NavLink>Blogs</NavLink></Link>
               </NavItem>
               <NavItem>
                 <NavLink href="#">Shop</NavLink>
