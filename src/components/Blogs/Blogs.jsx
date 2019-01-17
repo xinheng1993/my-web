@@ -1,24 +1,24 @@
 import React, { Component } from "react";
-import Title from './Title';
-import Desc from './Desc';
-import Content from './Content';
-import Img from 'react-image';
+import Navigation from "../Navigation";
+import Title from "./Title";
+import Desc from "./Desc";
+import Content from "./Content";
+import Img from "react-image";
 import pkq from "../../assets/img/pkaqiu.png";
 
-
 class Blogs extends Component {
-
-
-    render() {
-        return (
-            <div className=''>
-                <Title title='恒欣傻逼' />
-                <Desc desc = 'A short Description' />
-                <Img src = {pkq}/>
-                <Content content = 'asdljnvjksdnvljnsdvuoisnv;asefousfna;sfnasodfnoasfn' />
-            </div>
-        );
-    }
+  render() {
+    console.log(this.props.location.state.id);
+    return (
+      <div className=''>
+        <Navigation />
+        <Title title={this.props.location.state.id + "号郑傻逼"} />
+        <Desc desc='A short Description' />
+        <Img src={pkq} />
+        <Content content={this.props.location.state.id} />
+      </div>
+    );
+  }
 }
 
 export default Blogs;
