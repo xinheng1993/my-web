@@ -7,8 +7,8 @@ import {
   NavLink,
 } from 'reactstrap';
 
-import logoURLSm from '../assets/img/logo-sm2.jpg'
-import logoURL from '../assets/img/logo-red.jpg'
+import logoURLSm from '../assets/img/logo-sm.png'
+import logoURL from '../assets/img/logo-red.png'
 class Navigation extends Component {
   constructor(props) {
     super(props);
