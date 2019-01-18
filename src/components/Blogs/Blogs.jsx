@@ -9,7 +9,7 @@ import pkq from "../../assets/img/pkaqiu.png";
 class Blogs extends Component {
   render() {
     console.log(this.props.location.state.id);
-    return (
+    return this.props.location.state.id ? (
       <div className=''>
         <Navigation />
         <Title title={this.props.location.state.id + "号郑傻逼"} />
@@ -17,6 +17,8 @@ class Blogs extends Component {
         <Img src={pkq} />
         <Content content={this.props.location.state.id} />
       </div>
+    ) : (
+      <div>Error</div>
     );
   }
 }
