@@ -26,7 +26,6 @@ class MainContent extends Component {
       />
     ) : (
       <div className='card-group'>
-        <Blogs />
         <CardDeck>
           <Cover detail={this.detail} id={0} />
           <Cover detail={this.detail} id={1} />
