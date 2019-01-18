@@ -2,12 +2,8 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Img from "react-image";
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
+  Collapse, Navbar, NavbarToggler,
+  NavbarBrand, Nav, NavItem,
   NavLink
 } from "reactstrap";
 
