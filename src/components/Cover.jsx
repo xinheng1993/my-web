@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 import jkAddr from "../assets/img/jk.jpg";
@@ -51,4 +50,4 @@ class Cover extends Component {
     );
   }
 }
-export default withRouter(Cover);
+export default Cover;

@@ -5,6 +5,7 @@ import Desc from "./Desc";
 import Content from "./Content";
 import Img from "react-image";
 import pkq from "../../assets/img/pkaqiu.png";
+import Error from "../error";
 
 class Blogs extends Component {
   render() {
@@ -18,7 +19,7 @@ class Blogs extends Component {
         <Content content={this.props.location.state.id} />
       </div>
     ) : (
-      <div>Error</div>
+      <Error />
     );
   }
 }
