@@ -13,7 +13,7 @@ class Blogs extends Component {
     return this.props.location.state.id !== undefined ? (
       <div className=''>
         <Navigation />
-        <Title title={this.props.location.state.id + "号恒欣"} />
+        <Title title={this.props.location.state.id + "号郑重阳"} />
         <Desc desc='A short Description' />
         <Img src={pkq} />
         <Content content={this.props.location.state.id} />
