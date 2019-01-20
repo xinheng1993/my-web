@@ -39,3 +39,14 @@
   align-items: center;
   justify-content: center;
 }
+.outborder {
+  border: 1px solid black;
+  padding: 10px;
+}
+.innerborder {
+  border: 1px solid red;
+  padding: 10px;
+}
+.navbar-nav {
+  font-size: 1pc;
+}

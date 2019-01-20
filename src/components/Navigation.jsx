@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import Img from "react-image";
 import {
   Collapse,
@@ -65,7 +64,7 @@ class Navigation extends Component {
                 <NavLink href='#'>About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href='#'>Contact</NavLink>
+                <NavLink href='/contactus'>Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
