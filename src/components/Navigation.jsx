@@ -2,8 +2,12 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Img from "react-image";
 import {
-  Collapse, Navbar, NavbarToggler,
-  NavbarBrand, Nav, NavItem,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
   NavLink
 } from "reactstrap";
 
@@ -52,7 +56,7 @@ class Navigation extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className='ml-auto' navbar>
               <NavItem>
-                <NavLink href='/'>Blogs</NavLink>
+                <NavLink href='/'>Home</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href='#'>Shop</NavLink>
