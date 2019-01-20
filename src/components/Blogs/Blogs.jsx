@@ -8,22 +8,16 @@ import pkq from "../../assets/img/pkaqiu.png";
 import Error from "../error";
 
 class Blogs extends Component {
-  componentDidMount() {
-    window.onpopstate = () => {
-      //   this.props.history.goBack();
-      console.log("hh");
-    };
-  }
   render() {
     console.log(this.props);
-    console.log(this.props.location.state.id);
-    return this.props.location.state.id !== undefined ? (
+    console.log(this.props.match.params.id);
+    return this.props.match.params.id !== undefined ? (
       <div className=''>
         <Navigation />
-        <Title title={this.props.location.state.id + "号郑重阳"} />
+        <Title title={this.props.match.params.id + "号郑重阳"} />
         <Desc desc='A short Description' />
         <Img src={pkq} />
-        <Content content={this.props.location.state.id} />
+        <Content content={this.props.match.params.id} />
       </div>
     ) : (
       <Error />
