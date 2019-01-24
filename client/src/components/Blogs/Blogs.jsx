@@ -8,11 +8,6 @@ import pkq from "../../assets/img/pkaqiu.png";
 import Error from "../error";
 
 class Blogs extends Component {
-  componentDidMount() {
-    fetch("/api/test")
-      .then(res => res.json())
-      .then(data => console.log("data:", data));
-  }
   render() {
     console.log(this.props);
     console.log(this.props.match.params.id);
