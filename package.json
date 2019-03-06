@@ -1,5 +1,5 @@
 {
-  "name": "tr-web",
+  "name": "my-web",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xinheng1993/tr-web.git"
+    "url": "git+https://github.com/xinheng1993/my-web.git"
   },
   "author": "xin heng & shawn zheng",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xinheng1993/tr-web/issues"
+    "url": "https://github.com/xinheng1993/my-web/issues"
   },
-  "homepage": "https://github.com/xinheng1993/tr-web#readme",
+  "homepage": "https://github.com/xinheng1993/my-web#readme",
   "dependencies": {
     "concurrently": "^4.1.0",
     "express": "^4.16.4"
