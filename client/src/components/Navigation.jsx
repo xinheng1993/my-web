@@ -43,13 +43,10 @@ class Navigation extends Component {
   //window size 767.5
   render() {
     return (
-      <div>
+      <div className='sticky-top'>
         <Navbar color='light' light expand='md'>
           <NavbarBrand>
-            <Img
-              style={{ width: "80%" }}
-              src={this.state.width > 767.5 ? logoURL : logoURLSm}
-            />
+            <h1>Xin</h1>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -58,7 +55,7 @@ class Navigation extends Component {
                 <NavLink href='/'>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href='#'>Shop</NavLink>
+                <NavLink href='/collection'>Collection</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href='#'>About</NavLink>

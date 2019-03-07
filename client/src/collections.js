@@ -4,14 +4,16 @@ import Navigation from "./components/Navigation";
 import MainContent from "./components/MainContent";
 import "bootstrap/dist/css/bootstrap.css";
 
-class Home extends Component {
+class Collections extends Component {
   render() {
     return (
       <div>
         <Navigation />
-        home
+        <div className='container'>
+          <MainContent />
+        </div>
       </div>
     );
   }
 }
-export default Home;
+export default Collections;

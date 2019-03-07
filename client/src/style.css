@@ -50,3 +50,9 @@
 .navbar-nav {
   font-size: 1pc;
 }
+.navbar-toggler {
+  margin-left: auto;
+}
+.container {
+  margin-bottom: 10px;
+}
