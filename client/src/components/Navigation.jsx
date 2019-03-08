@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Img from "react-image";
+import $ from "jquery";
 import {
   Collapse,
   Navbar,
@@ -17,6 +18,7 @@ class Navigation extends Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
+    this.active = this.active.bind(this);
     this.state = {
       isOpen: false,
       width: 0
@@ -31,7 +33,9 @@ class Navigation extends Component {
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateWindowDimensions);
   }
-
+  active(id) {
+    $("#home").addClass("active");
+  }
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
@@ -44,27 +48,29 @@ class Navigation extends Component {
   render() {
     return (
       <div className='sticky-top'>
-        <Navbar color='light' light expand='md'>
-          <NavbarBrand>
-            <h1>Xin</h1>
-          </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className='ml-auto' navbar>
-              <NavItem>
-                <NavLink href='/'>Home</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href='/collection'>Collection</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href='#'>About</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href='/contactus'>Contact</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
+        <Navbar color='dark' dark expand='md'>
+          <div className='container'>
+            <NavbarBrand>
+              <h1 style={{ color: "white" }}>XIN</h1>
+            </NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav id='navItemGroup' className='ml-auto' navbar>
+                <NavItem id='home'>
+                  <NavLink href='/'>Home</NavLink>
+                </NavItem>
+                <NavItem id='collection'>
+                  <NavLink href='/collection'>Collection</NavLink>
+                </NavItem>
+                <NavItem id='about'>
+                  <NavLink href='#'>About</NavLink>
+                </NavItem>
+                <NavItem id='contact'>
+                  <NavLink href='/contactus'>Contact</NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </div>
         </Navbar>
       </div>
     );

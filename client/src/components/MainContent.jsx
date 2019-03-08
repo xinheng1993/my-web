@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { getAllBlogs } from "../actions/blogsActions";
+import { getAllItems } from "../actions/itemsActions";
 import "bootstrap/dist/css/bootstrap.css";
 import Cover from "./Cover";
 import { CardDeck } from "reactstrap";
 
 class MainContent extends Component {
   componentDidMount() {
-    this.props.getAllBlogs();
+    this.props.getAllItems();
   }
 
   render() {
-    const oneCover = this.props.allBlogs.map(id => <Cover key={id} id={id} />);
+    const oneCover = this.props.allItems.map(id => <Cover key={id} id={id} />);
     return (
       <div className='card-group'>
         <CardDeck>{oneCover}</CardDeck>
@@ -22,13 +22,13 @@ class MainContent extends Component {
 }
 
 MainContent.propTypes = {
-  getAllBlogs: PropTypes.func.isRequired,
-  allBlogs: PropTypes.array.isRequired
+  getAllItems: PropTypes.func.isRequired,
+  allItems: PropTypes.array.isRequired
 };
 
-const mapStateToProps = state => ({ allBlogs: state.allBlogs });
+const mapStateToProps = state => ({ allItems: state.allItems });
 
 export default connect(
   mapStateToProps,
-  { getAllBlogs }
+  { getAllItems }
 )(MainContent);

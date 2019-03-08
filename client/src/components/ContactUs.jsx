@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navigation from "./Navigation";
+import $ from "jquery";
 import * as EmailValidator from "email-validator";
 import {
   FormGroup,
@@ -28,6 +28,12 @@ class ContactUs extends Component {
       [name]: value
     });
   };
+  componentDidMount() {
+    $("#navItemGroup")
+      .children()
+      .removeClass("active");
+    $("#contact").addClass("active");
+  }
   getValidationState() {
     if (this.state.email.length > 0) {
       return EmailValidator.validate(this.state.email) ? "success" : "error";
@@ -36,8 +42,7 @@ class ContactUs extends Component {
   }
   render() {
     return (
-      <div>
-        <Navigation />
+      <div className='container'>
         <div className='outborder'>
           <div className='innerborder'>
             <Form horizontal>

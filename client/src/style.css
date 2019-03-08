@@ -53,6 +53,10 @@
 .navbar-toggler {
   margin-left: auto;
 }
-.container {
-  margin-bottom: 10px;
+.active {
+  color: white;
+  border-bottom: 2px solid white;
+}
+.footer {
+  padding: 20px 0 20px 0;
 }

@@ -26,7 +26,7 @@ class Cover extends Component {
     return (
       <div className='col-md-4 mycard'>
         <Link
-          to={"/blogs/" + this.props.id}
+          to={"/items/" + this.props.id}
           style={{ textDecoration: "none", color: "black" }}
         >
           <Card>

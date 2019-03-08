@@ -1,1 +1,1 @@
-export const GET_ALL_BLOGS = "GET_ALL_BLOGS";
+export const GET_ALL_ITEMS = "GET_ALL_ITEMS";
