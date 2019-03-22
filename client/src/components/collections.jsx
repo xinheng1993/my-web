@@ -13,11 +13,9 @@ class Collections extends Component {
   }
   render() {
     return (
-      <div>
-        <div className='container'>
-          <MainContent />
-          <Footer />
-        </div>
+      <div className='container'>
+        <MainContent />
+        <Footer />
       </div>
     );
   }

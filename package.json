@@ -14,15 +14,17 @@
     "type": "git",
     "url": "git+https://github.com/xinheng1993/my-web.git"
   },
-  "author": "xin heng & shawn zheng",
+  "author": "xin heng",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/xinheng1993/my-web/issues"
   },
   "homepage": "https://github.com/xinheng1993/my-web#readme",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "concurrently": "^4.1.0",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "react-bootstrap": "^1.0.0-beta.5"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

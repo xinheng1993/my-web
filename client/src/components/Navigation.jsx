@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Img from "react-image";
 import $ from "jquery";
 import {
   Collapse,
@@ -10,9 +9,7 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
-
-import logoURLSm from "../assets/img/logo-sm.png";
-import logoURL from "../assets/img/logo-red.png";
+import imgurl from "../assets/img/IMG_3687.png";
 class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -50,8 +47,14 @@ class Navigation extends Component {
       <div className='sticky-top'>
         <Navbar color='dark' dark expand='md'>
           <div className='container'>
-            <NavbarBrand>
-              <h1 style={{ color: "white" }}>XIN</h1>
+            <NavbarBrand href='/' className='mybrand'>
+              <img
+                src={imgurl}
+                className='d-inline-block align-top mylogo'
+                alt='logo'
+              />
+
+              <h1 style={{ color: "white", margin: "5px" }}>XIN</h1>
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>

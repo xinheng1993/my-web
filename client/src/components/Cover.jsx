@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 import { Link } from "react-router-dom";
-import jkAddr from "../assets/img/jk.jpg";
+import jkAddr from "../assets/img/IMG_3687.png";
 
 class Cover extends Component {
   constructor() {
@@ -38,12 +38,7 @@ class Cover extends Component {
                 </small>
               </CardText>
             </CardBody>
-            <CardImg
-              top
-              width='80%'
-              src={this.state.imgUrl}
-              alt='Card image cap'
-            />
+            <CardImg top src={this.state.imgUrl} alt='Card image cap' />
             <CardBody>
               <CardText> {this.state.desc}</CardText>
             </CardBody>
